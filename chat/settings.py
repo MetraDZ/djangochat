@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'chat.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db.postgresql',
-        'USER': 'postgres',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '8080',
+        'NAME': 'd14np0i8rbktrt',
+        'USER': 'sbushbycgyfgxv',
+        'PASSWORD': '44432a41cf42bb937ce1d70665630f0ee31d431139360162ae0e22b18e784611',
+        'HOST': 'ec2-18-214-140-149.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
