@@ -27,7 +27,7 @@ SECRET_KEY = '@s+_pl285p#(2h=wu2$&)p+1ng2@e#-1f(^pgd%7202w8fv_t%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://djangochattesttask.herokuapp.com']
+ALLOWED_HOSTS = ['djangochattesttask.herokuapp.com']
 
 
 # Application definition
