@@ -13,4 +13,4 @@ pandas==1.1.0
 pytz==2020.4
 whitenoise==5.2.0
 Django==3.2
-psycopg2==2.7.3.2
+psycopg2-binary==2.8.6
