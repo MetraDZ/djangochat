@@ -28,9 +28,10 @@ def messages_single(request, page = None):
     elif request.method == 'POST':
         messages_data = JSONParser().parse(request)
         message_serializer = MessageSerializer(data = messages_data)
-        if message_serializer.is_valid():
-            message_serializer.save()
-            return JsonResponse(message_serializer.data, status = status.HTTP_201_CREATED)
+        if None not in messages_data:
+            if message_serializer.is_valid():
+                message_serializer.save()
+                return JsonResponse(message_serializer.data, status = status.HTTP_201_CREATED)
         return JsonResponse(message_serializer.errors, status = status.HTTP_400_BAD_REQUEST)
 
 @api_view(['GET'])
