@@ -82,17 +82,8 @@ WSGI_APPLICATION = 'chat.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'de89vo4q7dqi38',
-        'USER': 'kmzxsxeumxgbnm',
-        'PASSWORD': '98c944fe527f79ee50c1514433b948ef23eaddcc9ebfcab909cd5ea968e347cd',
-        'HOST': 'ec2-18-214-140-149.compute-1.amazonaws.com',
-        'PORT': '5432',
-    }
-}
+DATABASE_URL = 'postgres://kmzxsxeumxgbnm:98c944fe527f79ee50c1514433b948ef23eaddcc9ebfcab909cd5ea968e347cd@ec2-18-214-140-149.compute-1.amazonaws.com:5432/de89vo4q7dqi38'
+DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
 
 
 # Password validation
